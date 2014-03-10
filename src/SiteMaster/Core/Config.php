@@ -22,6 +22,7 @@ class Config
         'MAX_HISTORY'      => 0,      //Max number of scans to keep per-site.  This is 2+max_history, because we need at LEAST 2
         'SCAN_PAGE_LIMIT'  => 2500,   //Max number of distinct pages to scan per site scan
         'RESTRICTED_URIS'  => array(), //Array of URIs that should not be scanned
+        'ENV'              => 'DEVELOP', //the env for this server (PRODUCTION, DEVELOP, TEST)
     
         //Loggers
         'PAGE_TITLE_LOGGER' => '\\SiteMaster\\Core\\Auditor\\Logger\\PageTitle',
