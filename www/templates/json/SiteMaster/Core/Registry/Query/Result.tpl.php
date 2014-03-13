@@ -6,7 +6,7 @@ foreach ($context as $site) {
     $sites[$site->base_url]['title'] = $site->title;
     
     $members = array();
-    foreach ($site->getMembers() as $member) {
+    foreach ($site->getApprovedMembers() as $member) {
         $user = $member->getUser();
         
         $roles = array();
